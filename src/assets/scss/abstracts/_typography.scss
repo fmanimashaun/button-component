@@ -1,0 +1,20 @@
+$ff-sans: "Open Sans", sans-serif;
+
+// based font sizes
+$base-font-size: 1rem !default;
+$font-size-sm: $base-font-size * 0.75 !default;
+$font-size-lg: $base-font-size * 1.5 !default;
+$font-size-xl: $base-font-size * 2 !default;
+$font-size-xxl: $base-font-size * 3 !default;
+
+// custom font sizes
+$font-size-18: $base-font-size * 1.125;
+$font-size-20: $base-font-size * 1.25;
+$font-size-24: $base-font-size * 1.5;
+$font-size-28: $base-font-size * 1.75;
+
+// font weights
+$fw-300: 300 !default;
+$fw-400: 400 !default;
+$fw-500: 500 !default;
+$fw-700: 700 !default;

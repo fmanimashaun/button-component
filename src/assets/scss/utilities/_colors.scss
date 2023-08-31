@@ -1,0 +1,31 @@
+@use '../abstracts' as *;
+
+@each $color, $shade-map in $colors {
+  @each $shade, $value in $shade-map {
+    .text-#{$color}-#{$shade} {
+      color: $value;
+    }
+    .bg-#{$color}-#{$shade} {
+      background-color: $value;
+    }
+  }
+}
+
+// looping through the colors map
+@each $color, $shade-map in $colors {
+  @each $key, $val in $shade-map {
+    .text-#{$color}-#{$key} {
+      color: $val;
+    }
+
+    .text-hover-#{$color}-#{$key} {
+      &:hover {
+        color: $val;
+      }
+    }
+
+    .bg-#{$color}-#{$key} {
+      background-color: $val;
+    }
+  }
+}

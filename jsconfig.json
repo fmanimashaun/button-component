@@ -5,8 +5,8 @@
     "baseUrl": ".",
     "jsx": "react",
     "paths": {
-      "@/components/*": [
-        "src/components/*"
+      "@/*": [
+        "src/*"
       ]
     }
   },

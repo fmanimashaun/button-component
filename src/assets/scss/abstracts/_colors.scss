@@ -1,0 +1,18 @@
+$colors: (
+  neutral: (
+    light: white,
+    normal: gray,
+    dark: black,
+  ),
+  primary: (
+    light: #AA801F,
+    normal: #4D9D37,
+    dark: #2B631C,
+  ),
+);
+
+$primary-color: map-get(map-get($colors, 'primary'), 'normal');
+$secondary-color: map-get(map-get($colors, 'primary'), 'light');
+$white-color: map-get(map-get($colors, 'neutral'), 'light');
+$black-color: map-get(map-get($colors, 'neutral'), 'dark');
+$gray-color: map-get(map-get($colors, 'neutral'), 'normal');
